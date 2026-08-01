@@ -9,3 +9,4 @@ langchain-text-splitters
 torch
 sentence-transformers
 qdrant-client
+openai

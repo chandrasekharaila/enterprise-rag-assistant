@@ -26,6 +26,13 @@ class Settings(BaseSettings):
 
     VECTOR_SIZE:int
     DISTANCE_METRIC:str
+    OPENAI_API_KEY:str
+
+    LLM_MODEL:str
+
+    TEMPERATURE:float
+
+    MAX_TOKENS:int
 
     model_config = SettingsConfigDict(
         env_file=".env",
