@@ -11,6 +11,9 @@ class BaseEmdder(ABC):
         """
         pass
 
+    @abstractmethod
+    def embed_text(query:str) ->list[float]:
+        pass
     def embed_batch(self, chunks: list[Chunk]) -> list[Embedding]:
         """
         Generate embeddings for multiple chunks

@@ -19,6 +19,14 @@ class Settings(BaseSettings):
     CHUNK_SIZE: int
     CHUNK_OVERLAP: int
 
+
+    QDRANT_HOST:str
+    QDRANT_PORT:int
+    QDRANT_COLLECTION:str
+
+    VECTOR_SIZE:int
+    DISTANCE_METRIC:str
+
     model_config = SettingsConfigDict(
         env_file=".env",
         env_file_encoding="utf-8",

@@ -12,13 +12,18 @@ class SentenceTransformerEmbedder(BaseEmdder):
         self.model_name = model_name
         self.embedder = SentenceTransformer(self.model_name)
 
-    def embed(self, chunk):
+    def embed(self, chunk: Chunk):
         text = chunk.content
         vector = self.embedder.encode(text,convert_to_numpy=True).tolist()
         return Embedding(
             chunk=chunk,
             vector=vector
         )
+    def embed_text(self,query)->list[float]:
+
+        vector = self.embedder.encode(query,convert_to_numpy=True)
+        return vector.tolist()
+    
     def batch_embed(self, chunks: list[Chunk]) -> list[Embedding]:
         texts = [chunk.content for chunk in chunks]
         vectors = self.embedder.encode(texts,convert_to_numpy=True)
