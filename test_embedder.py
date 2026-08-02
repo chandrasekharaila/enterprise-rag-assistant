@@ -1,10 +1,7 @@
 from app.embeddings.embedding_pipeline import EmbeddingPipeline
 from app.ingestion.loader_factory import LoaderFactory
 from app.processing.chunk_pipeline import ChunkPipeline
-from dotenv import load_dotenv
-from app.core.config import settings
 
-load_dotenv()
 
 loader = LoaderFactory.get_loader("data/sample.pdf")
 

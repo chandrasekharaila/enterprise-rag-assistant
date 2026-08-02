@@ -1,5 +1,5 @@
 from app.schemas.embedding import Embedding
-from app.vectorstore.qdrant_score import QdrantStore
+from app.vectorstore.qdrant_store import QdrantStore
 
 
 class VectorPipeline:
