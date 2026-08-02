@@ -10,3 +10,4 @@ torch
 sentence-transformers
 qdrant-client
 openai
+python-multipart
