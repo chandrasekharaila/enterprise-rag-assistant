@@ -368,14 +368,6 @@ http://localhost:8000/redoc
 
 ---
 
-# 📸 Screenshots
-
-| Swagger UI         | Qdrant Dashboard   | Chat Response      |
-| ------------------ | ------------------ | ------------------ |
-| _(Add Screenshot)_ | _(Add Screenshot)_ | _(Add Screenshot)_ |
-
----
-
 # 💡 Key Learnings
 
 ### End-to-End RAG Architecture
